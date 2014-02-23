@@ -6,6 +6,7 @@
 
 package TreeImplementation;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
@@ -83,7 +84,20 @@ public class BinarySearchTree implements BinarySearchTreeADT {
 
     @Override
     public Iterable children(Node parent) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        ArrayList<Node> childList=new ArrayList<Node>();
+        
+        if (parent.leftChild!=null  ||  parent.rightChild!=null) {
+            if (parent.leftChild != null) {
+                childList.add(parent.leftChild);
+            }
+            if (parent.rightChild != null) {
+                childList.add(parent.rightChild);
+            }
+            return childList;
+        } else {
+            return null;
+        }
     }
 
     @Override

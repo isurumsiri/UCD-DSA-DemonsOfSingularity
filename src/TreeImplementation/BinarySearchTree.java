@@ -25,7 +25,12 @@ public class BinarySearchTree implements BinarySearchTreeADT {
      */
     @Override
     public boolean isEmpty() {
-        return (size == 0);
+
+         if (root.leftChild==null && root.rightChild==null) {
+            return true;
+        } else {
+            return false;
+        }
     }
     
     /**

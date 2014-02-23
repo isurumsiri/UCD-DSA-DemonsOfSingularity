@@ -41,8 +41,8 @@ public interface BinarySearchTreeADT {
 	/*Binary Tree specific methods*/
 	public abstract Node left(Node position);
 	public abstract Node right(Node position);
-	public abstract Node hasLeft(Node position);
-	public abstract Node hasRight(Node position);
+	public abstract boolean hasLeft(Node position);
+	public abstract boolean hasRight(Node position);
 
 	/*Traversing methods*/
 	public abstract void preOrder(Node position);

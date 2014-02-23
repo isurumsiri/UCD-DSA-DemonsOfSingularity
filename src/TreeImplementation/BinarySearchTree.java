@@ -105,18 +105,29 @@ public class BinarySearchTree implements BinarySearchTreeADT {
     }
 
     @Override
-    public Node hasLeft(Node position) {
+    public boolean hasLeft(Node position) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Node hasRight(Node position) {
+    public boolean hasRight(Node position) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     * this method traverse the tree in pre-order fashion. 
+     * currently visit operation performs printNode method if node.
+     * visit operation should be updated.
+     * @param position 
+     */
     @Override
     public void preOrder(Node position) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Node current = position;
+        current.printBook();
+        if(hasLeft(current))
+        {
+        
+        }
     }
 
     @Override

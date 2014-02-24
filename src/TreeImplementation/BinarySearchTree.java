@@ -75,10 +75,7 @@ public class BinarySearchTree implements BinarySearchTreeADT {
 
     @Override
     public Node parent(Node child) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        if(child.parent!=null)
-            {return child.parent;}
-        else{return null;}
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

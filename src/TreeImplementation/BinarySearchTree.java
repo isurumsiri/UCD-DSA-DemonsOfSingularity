@@ -39,16 +39,7 @@ public class BinarySearchTree implements BinarySearchTreeADT {
      */
     @Override
     public int size() {
-        return size(root);
-    }
-    public int size(Node rootNode){
-        
-        if(rootNode == null){
-            return 0;
-        }
-        else{
-            return 1 + size(left(rootNode)) + size(right(rootNode));
-        }
+        return size;
     }
 
     @Override

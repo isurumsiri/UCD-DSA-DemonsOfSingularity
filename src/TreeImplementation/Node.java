@@ -18,5 +18,5 @@ public class Node extends Book{
     /**
      * three self referencing object references to parent, left child and right child.
      */
-    Node parent, leftChild, rightChild;
+    Node parent, leftChil, rightChild;
 }

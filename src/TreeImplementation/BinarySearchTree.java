@@ -102,32 +102,17 @@ public class BinarySearchTree implements BinarySearchTreeADT {
 
     @Override
     public boolean isInternal(Node position) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        if (hasLeft(position)||hasRight(position)) {
-            return true;
-        } else {
-            return false;
-        }       
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean isExternal(Node position) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        if (hasLeft(position)||hasRight(position)) {
-            return false;
-        } else {
-            return true;
-        }
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean isRoot(Node position) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        if (position.parent!=null) {
-            return false;
-        } else {
-            return true;
-        }
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
